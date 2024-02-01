@@ -1,7 +1,7 @@
 .dir-container {
 
   margin: 15px 47px;
-  height: 175px;
+  height: 180px;
   width: 90%;
   overflow: auto;
   border: 1px solid black;
@@ -38,5 +38,4 @@
   padding-left: 10px;
   padding-top: 10px;
   cursor: pointer;
-
 }
