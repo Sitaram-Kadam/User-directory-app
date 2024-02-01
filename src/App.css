@@ -37,6 +37,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .main-div{
+    overflow-x: hidden;
+  }
   .dir-container {
     margin: 15px 0px;
     margin-left: 22px;
