@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="main-div">
       {!data && <p>Loading...</p>}
       <div>
         {data && (
