@@ -1,91 +1,173 @@
+.time-container {
+    display: flex;
+    gap: 20px;
+    margin-left: 55%;
+}
+
+
+.time-div {
+    display: flex;
+    gap: 10px;
+    /* margin-left: 725px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(103 94 94);
+    height: 25px;
+    width: 60%;
+    font-weight: bold;
+    background-color: #81a9cb;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.time-box {
+    margin-top: 29px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 21%;
+    height: 20px;
+    font-weight: bold;
+    background-color: #04045da8;
+    color: blue;
+    color: white;
+}
+
+
+
 .pr-container {
-  width: 90%;
-  padding: 15px;
-  height: 175px;
-  border: 1px solid black;
-  margin: 10px 44px;
-  display: flex;
-  gap: 300px;
-  border-radius: 10px;
-  background-color: #d7d7b7c7;
+    width: 90%;
+    padding: 15px;
+    height: 175px;
+    border: 1px solid black;
+    margin: 10px 44px;
+    display: flex;
+    gap: 300px;
+    border-radius: 10px;
+    background-color: #d7d7b7c7;
 }
 
 .pr-cont-1 {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
 
 .pr-cont-2 {
-  margin-left: 160px;
-  width: 325px;
+    margin-left: 160px;
+    width: 325px;
 }
 
 .post-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin-left: 40px;
-  margin-top: 26px;
-  gap: 40px;
-}
-
-.post-card {
-  width: 25%;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 30px;
-  background-color: #b2dfb1;
-}
-
-.post-card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.p-tag {
-  margin-top: 0px;
-}
-
-.label-pr {
-  display: flex;
-  gap: 10px;
-  /* padding-left: 10px; */
-  padding-top: 4px;
-  /* cursor: pointer; */
-}
-
-@media screen and (max-width: 800px) {
-  .pr-container {
     display: flex;
-    margin-left: 20px;
-    flex-direction: column;
-    gap: 0px;
-    height: 365px;
-    width: 80%;
-  }
-
-  .pr-cont-2 {
-    margin-left: 0px;
-  }
-  .post-card-container {
-    display: flex;
-    width: 100%;
     flex-wrap: wrap;
     padding: 10px;
     margin-left: 40px;
     margin-top: 26px;
     gap: 40px;
-  }
+}
 
-  .post-card {
-    width: 60%;
+.post-card {
+    width: 25%;
     border: 1px solid black;
     border-radius: 5px;
     padding: 30px;
     background-color: #b2dfb1;
-  }
-  .p-tag {
+}
+
+.post-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.p-tag {
     margin-top: 0px;
-    width: 58%;
-  }
+}
+
+.label-pr {
+    display: flex;
+    gap: 10px;
+    /* padding-left: 10px; */
+    padding-top: 4px;
+    /* cursor: pointer; */
+}
+
+@media screen and (max-width: 900px) {
+    .pr-container {
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+        gap: 0px;
+        height: 365px;
+        width: 80%;
+    }
+
+    .pr-cont-2 {
+        margin-left: 0px;
+    }
+
+    .post-card-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-left: 40px;
+        margin-top: 26px;
+        gap: 40px;
+    }
+
+    .post-card {
+        width: 60%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 30px;
+        background-color: #b2dfb1;
+    }
+
+    .p-tag {
+        margin-top: 0px;
+        width: 58%;
+    }
+
+
+}
+
+@media screen and (max-width: 1350px) {
+
+    .time-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin: auto;
+        align-items: center;
+    }
+
+
+    .time-div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px px;
+        margin-top: 30px;
+        margin-bottom: 7px;
+        border: 1px solid rgb(103 94 94);
+        height: 50px;
+        width: 60%;
+        font-weight: bold;
+        background-color: #81a9cb;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .time-box {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        padding: 10px;
+        width: 30%;
+        height: 30px;
+        font-weight: bold;
+        background-color: #04045da8;
+        color: blue;
+        color: white;
+    }
+
 }
