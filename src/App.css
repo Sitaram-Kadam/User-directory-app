@@ -4,7 +4,7 @@
   width: 90%;
   overflow: auto;
   border: 1px solid black;
-  padding: 16px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -36,10 +36,11 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
-  .main-div{
+@media screen and (max-width: 900px) {
+  .main-div {
     overflow-x: hidden;
   }
+
   .dir-container {
     margin: 15px 0px;
     margin-left: 22px;
@@ -48,7 +49,7 @@
     overflow: auto;
     overflow-x: hidden;
     border: 1px solid black;
-    padding: 16px;
+    padding: 14px;
     display: flex;
     flex-direction: column;
     gap: 10px;
