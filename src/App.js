@@ -6,6 +6,7 @@ import "./App.css";
 function App() {
   const [data, setData] = useState(null);
   const [selectedUser, setSelectedUser] = useState(null);
+  const [posts, setPosts] = useState(null);
 
   useEffect(() => {
     (async () => {
@@ -19,6 +20,22 @@ function App() {
         console.log(error);
       }
     })();
+  }, []);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/posts"
+        );
+        const data = await response.json();
+        setPosts(data);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+
+
   }, []);
 
   return (
@@ -40,6 +57,7 @@ function App() {
                     <p style={{ marginTop: "0px" }} key={user.id}>
                       <span>{user.name}</span>
                     </p>
+
                   </label>
                 </button>
               </div>
